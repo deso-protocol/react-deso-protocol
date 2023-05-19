@@ -1,0 +1,21 @@
+name: Publish
+
+on:
+  release:
+    types: [created]
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    env:
+      NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+      HUSKY: 0
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: "https://registry.npmjs.org"
+      - name: NPM Publish
+        run: |
+          ./scripts/setup_git.sh
+          ./scripts/publish.sh
