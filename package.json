@@ -14,7 +14,7 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "deso-protocol": "^2.0.2",
+    "deso-protocol": ">= 1.0.0",
     "react": ">= 16.8.0"
   },
   "devDependencies": {
