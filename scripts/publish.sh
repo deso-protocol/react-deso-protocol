@@ -12,6 +12,8 @@ set -e
 # <version-number>-beta.<pre-release-version>
 # example: v0.0.1-beta.0
 NEW_VERSION=$(git describe --tags --abbrev=0)
+# remove leading `v` from version if it exists
+NEW_VERSION=${NEW_VERSION#v}
 NPM_PRERELEASE_TAG=$(echo $NEW_VERSION | cut -d '-' -f 2 | cut -d '.' -f 1)
 
 echo "Preparing to release $NEW_VERSION"
