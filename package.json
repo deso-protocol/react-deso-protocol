@@ -1,6 +1,6 @@
 {
   "name": "react-deso-protocol",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Provides a default context and context provider for deso protocol.",
   "main": "src/index.js",
   "types": "./src/index.d.ts",
@@ -14,7 +14,7 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "deso-protocol": ">= 2.0.2",
+    "deso-protocol": "^2.0.2",
     "react": ">= 16.8.0"
   },
   "devDependencies": {
