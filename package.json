@@ -1,6 +1,6 @@
 {
   "name": "react-deso-protocol",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Provides a default context and context provider for deso protocol.",
   "main": "index.js",
   "type": "module",
